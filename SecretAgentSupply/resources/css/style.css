@@ -1,0 +1,235 @@
+html {
+	font-size: 18px;
+}
+
+body {
+	margin: 0;
+	font-family: Helvetica;
+}
+
+/*sections and boxes*/
+.section {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+}
+
+.box {
+	display: flex;
+	width: 960px;
+}
+
+/*header style rules*/ 
+header {
+	display: flex;
+	align-items: center;
+	height: 2rem;
+	background-color: black;
+	color: white;
+}
+
+header .box {
+	align-items:  center;
+}
+
+header img {
+	height: 1.5rem;
+	margin-left: 5rem;
+	margin-right: 1rem; 
+}
+
+header p {
+	font-size: 20px;
+	margin: 1rem 0px;
+}
+
+/*new stuff style rules*/ 
+.new-stuff {
+	height: 25.5rem;
+	background-image: url("../images/moto.jpeg");
+	background-size: cover;
+}
+
+.new-items {
+	margin-left: 5rem;
+	width: 25rem;
+	position: absolute;
+	top: 9.5rem;
+	text-align: left;
+	font-weight: bold;
+	background-color: black;
+	color: white;
+}
+
+.new-items h4 {
+	font-size: 1rem;
+	padding-left: 2rem;
+	padding-top: 1.90rem;
+}
+
+.new-items h3 {
+	font-size: 2rem;
+	padding-top: 0.26rem;
+	padding-bottom: 2rem;
+	padding-left: 2rem;
+}
+
+/*nav style rules*/
+nav {
+	display: flex;
+	background-color: firebrick;
+	color: white;
+	height: 2rem;
+	align-items: center;
+}
+
+nav span {
+	width: 15%;
+    margin-left: 8rem;
+}
+
+/*products style rules*/
+.products .box {
+	display: flex;
+	justify-content: center;
+	justify-content: space-around;
+	width: 100%;
+	padding-top: 3rem;
+	padding-bottom: 3rem;
+}
+
+.product .imgs {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 7.5rem;
+	width: 9.5rem;
+	max-width: 7.5rem;
+	padding: 3rem;
+	border: 3.1px solid black;
+}
+
+.glasses .imgs {
+	height: 5rem;
+	width: 5.1rem;
+	padding: 4.2rem;
+}
+
+.product p {
+	justify-content: center;
+	text-align: center;
+	background-color: black;
+	color: white;
+	width: 13.83rem;
+	padding: 0.5rem 0;
+}
+
+/* info, hours, location style rules*/
+.info .box {
+	width: 100%;
+	justify-content: space-between;
+	padding-bottom: 4rem;
+}
+
+.location, .hours {
+	margin: 0 5rem;
+	justify-content: center;
+	width: 20rem;
+}
+
+.name {
+	background-color: black;
+	color: white;
+	padding: 1rem 2rem;
+}
+
+/*footer style rules*/
+footer {
+	background-color: black;
+	color: white;
+	height: 7rem;
+}
+
+footer .box {
+	align-items: center;
+}
+
+/*desktop screen media query*/
+@media only screen and (min-width: 1024px) {
+	.tabletScreen {
+		display: none;
+	}
+}
+
+/*tablet screen media query*/ 
+@media only screen and (max-width: 1024px) {
+	.desktopScreen {
+		display: none;
+	}
+	nav .box {
+		justify-content: center;
+	}
+	.glasses {
+		display: none;
+	}
+	.product {
+		width: 30%;
+	}
+}
+
+/*mobile media query*/
+@media only screen and (max-width: 470px) {
+	.new-stuff {
+		height: 16rem;
+	}
+	#new-items {
+		position: absolute;
+		top: 10rem;
+		text-align: left;
+		width: 100%;
+		background-color: black;
+		color: white;
+	}
+	#new-items h4 {
+		padding-top: 1rem;
+		padding-left: 2rem;
+		font-weight: bold;
+		font-size: 0.77rem;
+	}
+	#new-items h3 {
+		padding-left: 2rem;
+		padding-top: 0.25rem;
+		padding-bottom: 1rem;
+		font-size: 1rem;
+		font-weight: bold;
+	}
+	.product .watch {
+		display: none;
+	}
+	.product {
+		width: 90%;
+	}
+	.products .box {
+		justify-content: center;
+	}
+	.info .box {
+		flex-direction: coumn;
+		padding-bottom: 3.90rem;
+		align-items: center;
+	}
+	.location {
+		width: 85%;
+	}
+	.hours {
+		padding-top: 0.6rem;
+		width: 90%;
+	}
+	.name {
+		padding: 1rem 2rem;
+		color: white;
+		background-color: black;
+	}
+	footer {
+		justify-content: center;
+	}
+} 
